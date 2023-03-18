@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('movies/', include('movie.urls')),
     path('user/', include('user.urls')),
+    path('rent/', include('rent.urls')),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='wagger-docs'),
     
 ]
